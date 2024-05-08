@@ -39312,7 +39312,7 @@ TextureImporter:
         width: 35
         height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -39333,7 +39333,7 @@ TextureImporter:
         width: 46
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -39341,6 +39341,27 @@ TextureImporter:
       bones: []
       spriteID: c57cf5fb7466e1447b0656fc8b96cfb5
       internalID: -807962560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map_1869
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1168
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7316aba5257a9fc418d76c6a3ed010dc
+      internalID: -1213016425
       vertices: []
       indices: 
       edges: []
@@ -40323,6 +40344,7 @@ TextureImporter:
       Map_1866: -1857388287
       Map_1867: -203470721
       Map_1868: -807962560
+      Map_1869: -1213016425
       Map_187: 1399689461
       Map_188: -1798570583
       Map_189: -1515700522
