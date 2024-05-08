@@ -8,7 +8,7 @@ public class PlayerController2D : MonoBehaviour
     Rigidbody2D rigidbody2D;
     [SerializeField] float speed = 2f;
     Vector2 motionVector;
-    Vector2 lastmotionVector;
+    public Vector2 lastmotionVector;
     Animator animator;
     public bool moving;
     void Awake()
