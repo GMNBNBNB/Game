@@ -10,4 +10,5 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
     public GameObject player;
+    public ItemContainer inventoryContainer;
 }
