@@ -9,6 +9,7 @@ public class InventoryButton : MonoBehaviour
 {
     [SerializeField] Image icon;
     [SerializeField] TMP_Text text;
+    [SerializeField] Image highlight;
 
     int myIndex;
 
@@ -37,5 +38,10 @@ public class InventoryButton : MonoBehaviour
         icon.sprite = null;
         icon.gameObject.SetActive(false);
         text.gameObject.SetActive(false);
+    }
+
+    public void Highlight(bool b)
+    {
+        highlight.gameObject.SetActive(b);
     }
 }

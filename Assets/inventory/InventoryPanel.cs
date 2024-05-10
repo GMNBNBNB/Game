@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Dynamic;
+using System.Linq;
 using UnityEngine;
 
 public class InventoryPanel : MonoBehaviour
@@ -22,7 +23,7 @@ public class InventoryPanel : MonoBehaviour
 
     private void SetIndex()
     {
-        for (int i = 0; i < inventory.slot.Count; i++)
+        for (int i = 0; i < inventory.slot.Count && i < buttons.Count; i++)
         {
             buttons[i].SetIndex(i);
         }
@@ -30,7 +31,7 @@ public class InventoryPanel : MonoBehaviour
 
     private void Show()
     {
-        for (int i = 0; i < inventory.slot.Count; i++)
+        for (int i = 0; i < inventory.slot.Count && i < buttons.Count; i++)
         {
             if (inventory.slot[i].item == null)
             {
