@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 
-public class InventoryButton : MonoBehaviour
+public class InventoryButton : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] Image icon;
     [SerializeField] TMP_Text text;
@@ -43,5 +44,12 @@ public class InventoryButton : MonoBehaviour
     public void Highlight(bool b)
     {
         highlight.gameObject.SetActive(b);
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        ItemContainer inventory = GameManager.Instance.inventoryContainer;
+        GameManager.Instance.dragController.OnClick(inventory.slot[myIndex]);
+        transform.parent.GetComponent<InventoryPanel>().Show();
     }
 }

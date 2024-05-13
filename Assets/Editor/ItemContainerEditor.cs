@@ -13,8 +13,7 @@ public class ItemContainerEdior : Editor
         {
             for (int i = 0; i < container.slot.Count; i++)
             {
-                container.slot[i].item = null;
-                container.slot[i].count = 0;
+                container.slot[i].Clear();
             }
         }
         DrawDefaultInspector();
