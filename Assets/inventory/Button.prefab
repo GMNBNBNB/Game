@@ -213,7 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 1610023062332956382}
   text: {fileID: 913498552854819983}
-  Highlight: {fileID: 5298297748297933337}
+  highlight: {fileID: 0}
 --- !u!1 &5592525731122602938
 GameObject:
   m_ObjectHideFlags: 0
