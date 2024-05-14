@@ -231,6 +231,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4639807265291778663, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 76.4104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639807265291778663, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 75.9403
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639807265291778663, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0299
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639807265291778663, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.1057
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3032,6 +3048,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 4639807265291778663, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639807265291778663, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 76
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4078,6 +4102,7 @@ GameObject:
   - component: {fileID: 1573447124}
   - component: {fileID: 1573447123}
   - component: {fileID: 1573447126}
+  - component: {fileID: 1573447127}
   m_Layer: 5
   m_Name: InventoryPanel
   m_TagString: Untagged
@@ -4094,7 +4119,7 @@ RectTransform:
   m_GameObject: {fileID: 1573447121}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 979044149}
@@ -4222,6 +4247,50 @@ MonoBehaviour:
   - {fileID: 1206216967}
   - {fileID: 1111116177}
   - {fileID: 2093954626}
+--- !u!114 &1573447127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573447121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1573447124}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &1601480157 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2474866822356138111, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
@@ -4361,6 +4430,14 @@ PrefabInstance:
     - target: {fileID: 2789127208806006626, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
       propertyPath: m_Name
       value: Button (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639807265291778663, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639807265291778663, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 76
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5344,7 +5421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1870418884
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6034,6 +6111,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573447122}
     m_Modifications:
+    - target: {fileID: 1610023062332956382, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2474866822356138111, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6116,7 +6197,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2789127208806006626, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
       propertyPath: m_Name
-      value: Button
+      value: Button1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639807265291778663, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639807265291778663, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639807265291778663, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
