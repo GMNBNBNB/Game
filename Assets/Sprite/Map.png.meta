@@ -11143,7 +11143,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Map_526
+      name: Plowed
       rect:
         serializedVersion: 2
         x: 96
@@ -40721,7 +40721,6 @@ TextureImporter:
       Map_523: 1696849214
       Map_524: -443512151
       Map_525: -1533153755
-      Map_526: -1744229238
       Map_527: 1461893912
       Map_528: -772463658
       Map_529: 1869857364
@@ -41246,6 +41245,7 @@ TextureImporter:
       Map_998: -1450822529
       Map_999: 400304283
       PlowableDirt: 1406066495
+      Plowed: -1744229238
       mark: 1435273448
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

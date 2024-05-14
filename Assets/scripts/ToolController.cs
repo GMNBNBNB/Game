@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using Vector2 = UnityEngine.Vector2;
 
 public class ToolController : MonoBehaviour
@@ -15,7 +16,9 @@ public class ToolController : MonoBehaviour
     [SerializeField] MarkerManager markerManager;
     [SerializeField] TileReadController tileReadcontroller;
     [SerializeField] float maxDistance = 1.5f;
-
+    [SerializeField] CropsManager cropsManager;
+    [SerializeField] TileData plowableTiles;
+    
     Vector3Int selectedTilePosition;
     bool selectable;
 
@@ -27,10 +30,12 @@ public class ToolController : MonoBehaviour
     private void Update()
     {
         SelectTile();
+        CanSelectCheck();
         Marker();
         if ((Input.GetMouseButtonDown(0)))
         {
-            UseTool();
+            if (UseTool()) { return; }
+            UseToolGrid();
         }
     }
 
@@ -44,6 +49,7 @@ public class ToolController : MonoBehaviour
         Vector2 characterPositionn = transform.position;
         Vector2 cameraPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         selectable = Vector2.Distance(characterPositionn, cameraPosition) < maxDistance;
+        markerManager.Show(selectable);
     }
 
     private void Marker()
@@ -51,7 +57,7 @@ public class ToolController : MonoBehaviour
         markerManager.markedCellPosition = selectedTilePosition;
     }
 
-    private void UseTool()
+    private bool UseTool()
     {
         Vector2 position = Rigidbody.position + Character.lastmotionVector * offsetDistance;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(position,sizeOfInteractAera);
@@ -61,7 +67,28 @@ public class ToolController : MonoBehaviour
             if(hit != null)
             {
                 hit.Hit();
-                break;
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private void UseToolGrid()
+    {
+        if(selectable == true)
+        {
+            TileBase tileBase = tileReadcontroller.GetTileBase(selectedTilePosition);
+            TileData tileData = tileReadcontroller.GetTileData(tileBase);
+            if(tileData != plowableTiles) { return; }
+
+            if (cropsManager.Check(selectedTilePosition))
+            {
+                cropsManager.Seed(selectedTilePosition);
+            }
+            else
+            {
+                cropsManager.Plow(selectedTilePosition);
             }
         }
     }
