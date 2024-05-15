@@ -24,6 +24,5 @@ public class ToolBarController : MonoBehaviour
                 selectedTool = (selectedTool <= 0 ? toolbarSize : selectedTool);
             }
         }
-        Debug.Log(selectedTool);
     }
 }

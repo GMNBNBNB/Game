@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6141079100122153868}
   - component: {fileID: 8874511689529657453}
   m_Layer: 0
-  m_Name: Tree_log
+  m_Name: PickUpItemPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

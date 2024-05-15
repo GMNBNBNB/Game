@@ -2799,6 +2799,7 @@ GameObject:
   - component: {fileID: 1074434611}
   - component: {fileID: 1074434612}
   - component: {fileID: 1074434613}
+  - component: {fileID: 1074434614}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2894,6 +2895,19 @@ MonoBehaviour:
   tileDatas:
   - {fileID: 11400000, guid: 8a5083f87c392234996cf08e6250ef9c, type: 2}
   - {fileID: 11400000, guid: 6fd27dd781ba3024282e582afe55ebdc, type: 2}
+--- !u!114 &1074434614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074434607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9724ecc37692346a76a5a8998bfc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpItemPrefab: {fileID: 5319054339540065360, guid: fa7ece511c8c903408c9442f27312d7c, type: 3}
 --- !u!224 &1095681755 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2474866822356138111, guid: 3a514328e16c47343b2e9213b21fd426, type: 3}
