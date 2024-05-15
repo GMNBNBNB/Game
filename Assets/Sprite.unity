@@ -1226,11 +1226,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 329621847}
   - {fileID: 1547940831}
   - {fileID: 1184908861}
   - {fileID: 1386109335}
   - {fileID: 13335879}
-  - {fileID: 329621847}
   - {fileID: 1095681755}
   - {fileID: 834657579}
   - {fileID: 1882657802}
@@ -1314,21 +1314,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 404131788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cb9fb403092a06478515d741b072c05, type: 3}
+  m_Script: {fileID: 11500000, guid: 93c8970056caf0349b59e23fae93f0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 43f17f8cc86f5d14095f0b0c4db8cdac, type: 2}
   buttons:
+  - {fileID: 329621848}
   - {fileID: 1547940832}
   - {fileID: 1184908862}
   - {fileID: 1386109336}
   - {fileID: 13335880}
-  - {fileID: 329621848}
   - {fileID: 1095681756}
   - {fileID: 834657580}
   - {fileID: 1882657803}
   - {fileID: 1988248856}
   - {fileID: 402643421}
+  toolbarController: {fileID: 1331998103}
 --- !u!1001 &404210727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3740,6 +3741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1573447121}
+  toolbarPanel: {fileID: 404131788}
 --- !u!114 &1331998103
 MonoBehaviour:
   m_ObjectHideFlags: 0
