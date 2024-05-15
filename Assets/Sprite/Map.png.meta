@@ -17044,13 +17044,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Map_807
+      name: stone
       rect:
         serializedVersion: 2
         x: 368
-        y: 720
-        width: 16
-        height: 16
+        y: 704
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -41031,7 +41031,6 @@ TextureImporter:
       Map_804: 1808759275
       Map_805: 526412905
       Map_806: -1942002591
-      Map_807: 435329264
       Map_808: -1100259661
       Map_809: -921833920
       Map_81: -655482690
@@ -41247,6 +41246,7 @@ TextureImporter:
       PlowableDirt: 1406066495
       Plowed: -1744229238
       mark: 1435273448
+      stone: 435329264
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
