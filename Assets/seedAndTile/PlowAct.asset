@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 451685e401691d8419e0eadab3439b60, type: 3}
-  m_Name: Wood
+  m_Script: {fileID: 11500000, guid: 0aaf6330e5e60d64b8e6c3b9855a6af7, type: 3}
+  m_Name: PlowAct
   m_EditorClassIdentifier: 
-  Name: Wood
-  stackable: 1
-  icon: {fileID: -21071021, guid: aade6212d4e83ad48bf313c3fcfa45b4, type: 3}
-  onAction: {fileID: 0}
-  onTileMapAction: {fileID: 0}
-  onItemUsed: {fileID: 0}
+  canPlow:
+  - {fileID: 11400000, guid: daba247d7670acf4fa09667c11e8d2c7, type: 2}

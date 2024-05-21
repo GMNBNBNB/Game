@@ -14,7 +14,7 @@ public class ToolBarController : MonoBehaviour
     {
         get
         {
-            return GameManager.Instance.inventoryContainer.slot[0].item;
+            return GameManager.Instance.inventoryContainer.slot[selectedTool].item;
         }
     }
     private void Update()

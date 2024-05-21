@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 451685e401691d8419e0eadab3439b60, type: 3}
-  m_Name: stone
+  m_Name: Pickaxe
   m_EditorClassIdentifier: 
-  Name: stone
-  stackable: 1
-  icon: {fileID: -1193522448, guid: aade6212d4e83ad48bf313c3fcfa45b4, type: 3}
-  onAction: {fileID: 11400000, guid: 5453f771ab05f3248a60bf83890d000d, type: 2}
-  onTileMapAction: {fileID: 0}
-  onItemUsed: {fileID: 0}
+  Name: pickaxe
+  stackable: 0
+  icon: {fileID: 903789201, guid: aade6212d4e83ad48bf313c3fcfa45b4, type: 3}
+  onAction: {fileID: 11400000, guid: 4f3a9887a5ca37c4b9e77a8466719c22, type: 2}

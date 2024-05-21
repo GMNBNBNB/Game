@@ -4,21 +4,20 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UIElements;
 using Vector2 = UnityEngine.Vector2;
 
 public class ToolController : MonoBehaviour
 {
     PlayerController2D Character;
     Rigidbody2D Rigidbody;
-
+    Animator animator;
     ToolBarController toolBarController;
     [SerializeField] float offsetDistance = 1f;
     [SerializeField] float sizeOfInteractAera = 1.2f;
     [SerializeField] MarkerManager markerManager;
     [SerializeField] TileReadController tileReadcontroller;
     [SerializeField] float maxDistance = 1.5f;
-    [SerializeField] CropsManager cropsManager;
-    [SerializeField] TileData plowableTiles;
     
     Vector3Int selectedTilePosition;
     bool selectable;
@@ -28,6 +27,7 @@ public class ToolController : MonoBehaviour
         Character = GetComponent<PlayerController2D>();
         Rigidbody = GetComponent<Rigidbody2D>();
         toolBarController = GetComponent<ToolBarController>();
+        animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -67,7 +67,16 @@ public class ToolController : MonoBehaviour
         if(item == null) {  return false; }
         if(item.onAction == null) { return false; }
 
+        animator.SetTrigger("act");
         bool complete = item.onAction.OnApply(position);
+
+        if (complete == true)
+        {
+            if (item.onItemUsed != null)
+            {
+                item.onItemUsed.OnItemUsed(item, GameManager.Instance.inventoryContainer);
+            }
+        }
 
         return complete;
     }
@@ -76,17 +85,19 @@ public class ToolController : MonoBehaviour
     {
         if(selectable == true)
         {
-            TileBase tileBase = tileReadcontroller.GetTileBase(selectedTilePosition);
-            TileData tileData = tileReadcontroller.GetTileData(tileBase);
-            if(tileData != plowableTiles) { return; }
+            Item item = toolBarController.GetItem;
+            if (item == null) { return; }
+            if (item.onTileMapAction == null) { return; }
 
-            if (cropsManager.Check(selectedTilePosition))
+            animator.SetTrigger("act");
+            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition,tileReadcontroller);
+
+            if (complete == true)
             {
-                cropsManager.Seed(selectedTilePosition);
-            }
-            else
-            {
-                cropsManager.Plow(selectedTilePosition);
+                if (item.onItemUsed != null)
+                {
+                    item.onItemUsed.OnItemUsed(item,GameManager.Instance.inventoryContainer);
+                }
             }
         }
     }

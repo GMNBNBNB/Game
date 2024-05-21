@@ -1609,11 +1609,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5698950066499984143, guid: d7b195e4e18815348a70b7712ee3876e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.8015071
+      value: -4.91
       objectReference: {fileID: 0}
     - target: {fileID: 5698950066499984143, guid: d7b195e4e18815348a70b7712ee3876e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6352806
+      value: 2.11
       objectReference: {fileID: 0}
     - target: {fileID: 5698950066499984143, guid: d7b195e4e18815348a70b7712ee3876e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2144,13 +2144,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 612744625143560999, guid: d7b195e4e18815348a70b7712ee3876e, type: 3}
+      propertyPath: nodeType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5698950066499984143, guid: d7b195e4e18815348a70b7712ee3876e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.8631663
+      value: -4.64
       objectReference: {fileID: 0}
     - target: {fileID: 5698950066499984143, guid: d7b195e4e18815348a70b7712ee3876e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.008802548
+      value: -1.66
       objectReference: {fileID: 0}
     - target: {fileID: 5698950066499984143, guid: d7b195e4e18815348a70b7712ee3876e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3129,9 +3133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 1825496140}
-  tileDatas:
-  - {fileID: 11400000, guid: 8a5083f87c392234996cf08e6250ef9c, type: 2}
-  - {fileID: 11400000, guid: 6fd27dd781ba3024282e582afe55ebdc, type: 2}
+  cropsManager: {fileID: 1074434614}
 --- !u!114 &1074434614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3813,8 +3815,6 @@ MonoBehaviour:
   markerManager: {fileID: 1111703165}
   tileReadcontroller: {fileID: 1074434613}
   maxDistance: 1.5
-  cropsManager: {fileID: 1074434614}
-  plowableTiles: {fileID: 11400000, guid: 6fd27dd781ba3024282e582afe55ebdc, type: 2}
 --- !u!114 &1331998100
 MonoBehaviour:
   m_ObjectHideFlags: 0

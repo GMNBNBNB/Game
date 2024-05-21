@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 451685e401691d8419e0eadab3439b60, type: 3}
-  m_Name: ToolGold
+  m_Script: {fileID: 11500000, guid: 5d34fd3cb8397ba4fa41ab8eb5e7743b, type: 3}
+  m_Name: Mine
   m_EditorClassIdentifier: 
-  Name: ToolGold
-  stackable: 0
-  icon: {fileID: 903789201, guid: aade6212d4e83ad48bf313c3fcfa45b4, type: 3}
+  sizeOfInteractAera: 1
+  canHitNodeOfType: 02000000

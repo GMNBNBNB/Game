@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 451685e401691d8419e0eadab3439b60, type: 3}
   m_Name: Axe
   m_EditorClassIdentifier: 
-  Name: 
+  Name: axe
   stackable: 0
   icon: {fileID: -112179894, guid: aade6212d4e83ad48bf313c3fcfa45b4, type: 3}
   onAction: {fileID: 11400000, guid: 5453f771ab05f3248a60bf83890d000d, type: 2}
