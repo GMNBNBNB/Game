@@ -12,4 +12,5 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public ItemContainer inventoryContainer;
     public ItemDragController dragController;
+    public DiglogueSystem diglogueSystem;
 }

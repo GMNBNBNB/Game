@@ -13,8 +13,8 @@ public class ToolController : MonoBehaviour
     Rigidbody2D Rigidbody;
     Animator animator;
     ToolBarController toolBarController;
-    [SerializeField] float offsetDistance = 1f;
-    [SerializeField] float sizeOfInteractAera = 1.2f;
+    [SerializeField] float offsetDistance = 0.5f;
+    [SerializeField] float sizeOfInteractAera = 0.5f;
     [SerializeField] MarkerManager markerManager;
     [SerializeField] TileReadController tileReadcontroller;
     [SerializeField] float maxDistance = 1.5f;
